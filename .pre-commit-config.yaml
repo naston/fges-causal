@@ -19,3 +19,10 @@ repos:
           language: system
           always_run: true
           pass_filenames: false
+
+        - id: jupyter-nb-clear-output
+          name: Clear Jupyter Notebook Outputs
+          files: \.ipynb$
+          stages: [commit]
+          language: system
+          entry: jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace
