@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "naston-project-template"
+name = "fges-causal"
 version = "0.1.0"
 description = "A base template for python projects"
 authors = ["Nathan <nathan@planetpaull.com>"]
 license = "Proprietary"
 readme = "README.md"
-packages = [{include = "valkyrie_project_template"}]
+packages = [{include = "fges_causal"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
